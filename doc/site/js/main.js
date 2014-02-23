@@ -6,13 +6,13 @@ $(function() {
     editor.container.style.opacity = "";
     embedded_editor = ace.edit("embedded_ace_code");
     embedded_editor.container.style.opacity = "";
-    embedded_editor.session.setMode("ace/mode/html");
+    embedded_editor.session.setMode("ace/mode/todotxt");
     embedded_editor.setAutoScrollEditorIntoView(true);
     embedded_editor.setOption("maxLines", 40);
     
     editor.setOptions({
         maxLines: 30,
-        mode: "ace/mode/javascript",
+        mode: "ace/mode/todotxt",
         autoScrollEditorIntoView: true
     });
     
